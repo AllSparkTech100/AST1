@@ -1,0 +1,64 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+}
+
+ul{
+    background-color: yellow;
+    width: 300px;
+    height: 200px;
+    }
+
+li{
+    padding: 8px 0px 0px 1px;
+    list-style: none;
+    line-height: 40px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+}
+
+
+section{
+    background-color: yellow;
+    height: 80px;
+    font-weight: 400px;
+    font-size: 24px;
+    font-family: 'Courier New', Courier, monospace;
+
+    ol{
+        list-style: none;
+        display: flex;
+        padding: 15px;
+        justify-content: space-between;
+        color: blue;
+}
+}
+
+.fa-facebook{
+    color: #6d84b4;
+}
+
+.fa-linkedin{
+    color: blue;
+}
+.fa-youtube{
+    color: red;
+}
+
+.fa-twitter{
+    color: navy;
+}
+
+.fa-pinterest{
+    color: red;
+}
+
+.fa-instagram{
+   color: blue;
+}
+
+.fa-whatsapp{
+color: green;
+}
