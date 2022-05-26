@@ -1,6 +1,5 @@
-.menu{
-    display: none;
-    color: blue;
+body{
+    background-color: gray;
 }
 
 .container{
@@ -11,6 +10,13 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+
+        .fa-bars{
+            color: white;
+            position:absolute;
+            display: none;
+            left: 94%;
+            }
 
         span{
             font-style: italic;
@@ -26,30 +32,35 @@
             list-style: none;
 
             li{
-                margin: 0px 0px;
+                margin: 0px 10px;
                 font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
                 font-weight: bold;
+            }
+            }
+        }
+}
 
+
+@media screen and (max-width: 500px) {
+
+    body{
+
+
+        .container{
+
+            header{
+                width: 100%;
+                .fa-bars{
+                    display: block;
+                }
+
+            ul{
+                display: none;
+                li{
+                    display: none;
                 }
             }
         }
     }
-
-
-@media screen and (max-width= 420px) {
-
-    body{
-        background-color: blue;
-
-        .container{
-            background-color: gray;
-
-            ul{
-                display: none;
-
-            .menu{
-                display: inline-block;
-            }
-        }
-    }
+}
 }

@@ -1,13 +1,9 @@
-.container {
-  background-color: red;
+body {
+  background-color: gray;
 }
 
-.container .fa-bars {
-  color: white;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  border: 3px;
+.container {
+  background-color: red;
 }
 
 .container header {
@@ -20,6 +16,13 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.container header .fa-bars {
+  color: white;
+  position: absolute;
+  display: none;
+  left: 94%;
 }
 
 .container header span {
@@ -42,5 +45,20 @@
   margin: 0px 10px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-weight: bold;
+}
+
+@media screen and (max-width: 500px) {
+  body .container header {
+    width: 100%;
+  }
+  body .container header .fa-bars {
+    display: block;
+  }
+  body .container header ul {
+    display: none;
+  }
+  body .container header ul li {
+    display: none;
+  }
 }
 /*# sourceMappingURL=cw.css.map */
